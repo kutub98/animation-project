@@ -1,0 +1,184 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.runningBox{
+    background: url(../images/sky.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+
+}
+.bg{
+    width: 500%;
+    height: 200px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.city{
+    width: 500%;
+    height: 300px;
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    overflow: hidden;
+    right: 0;
+}
+.city img,
+.bg img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: road 5s infinite linear;
+    -webkit-animation: road 5s infinite linear;
+}
+@keyframes road{
+    100%{
+        transform: translateX(-5500px);
+        -webkit-transform: translateX(-5500px);
+        -moz-transform: translateX(-5500px);
+        -ms-transform: translateX(-5500px);
+        -o-transform: translateX(-5500px);
+}
+}
+
+.car{
+    position: absolute;
+    bottom: 100px;
+    left: 200px;
+    width: 300px;
+    height: 100px
+}
+.car img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.wheels, .wheels2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 1px;
+    left: 28px;
+}
+.wheels2 {
+    left: 213px;
+    bottom: -1px;
+}
+.wheels img,
+.wheels2 img{
+    width: 100%;
+    height: 100%;
+    animation: wheel .5s infinite linear;
+    -webkit-animation: wheel .5s infinite linear;
+}
+@keyframes wheel{
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+
+.golpfield{
+    height: 400px;
+    width: 100%;
+    background: green;
+    border: 1px solid white;
+    position: relative;
+}
+
+.golpMna{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 100px;
+}
+.golpMna img{
+    width: 100%;
+    height: 100%;
+}
+.bat{
+    position: absolute;
+    width: 69px;
+    height: 112px;
+    left: 32px;
+
+}
+.bat img{
+    position: absolute;
+    left: 104px;
+    width: 100%;
+    height: 100%;
+    top: -115px;
+}
+
+.pocket{
+    position: absolute;
+    right: 200px;
+    bottom: 100px;
+    height: 200px;
+    width: 200px;
+}
+.pocket img{
+    height: 100%;
+    width: 100%;
+
+}
+.golpfield:hover .bat{
+    transform: rotateX(-30deg);
+    transform-origin: bottom right bottom ;
+    
+    -webkit-transform: rotateX(-30deg);
+    -moz-transform: rotateX(-30deg);
+    -ms-transform: rotateX(-30deg);
+    -o-transform: rotateX(-30deg);
+}
+.bat{
+    transition: transform 1s ease-out ;
+    -webkit-transition: transform 1s ease-out ;
+    -moz-transition: transform 1s ease-out ;
+    -ms-transition: transform 1s ease-out ;
+    -o-transition: transform 1s ease-out ;
+}
+.ball{
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   left: 160px;
+   top: 177px;
+   background: white;
+   transition: transform 2s ease-out 1s;
+   -webkit-transition: transform 2s ease-out 1s;
+   -moz-transition: transform 2s ease-out 1s;
+   -ms-transition: transform 2s ease-out 1s;
+   -o-transition: transform 2s ease-out 1s;
+}
+.golpfield:hover .ball{
+    transform: translate(840px, 88px);
+    -webkit-transform: translate(840px, 88px);
+    -moz-transform: translate(840px, 88px);
+    -ms-transform: translate(840px, 88px);
+    -o-transform: translate(840px, 88px);
+}
